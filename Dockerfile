@@ -1,5 +1,10 @@
-FROM teddysun/xray
+FROM ubuntu:22.04
 
-COPY config.json /etc/xray/config.json
+RUN apt-get update && apt-get install -y curl
 
-CMD ["xray", "-c", "/etc/xray/config.json"]
+COPY xray /usr/local/bin/xray
+COPY config.json /app/config.json
+
+WORKDIR /app
+
+CMD ["xray", "-config", "/app/config.json"]
