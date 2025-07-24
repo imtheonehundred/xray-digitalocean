@@ -1,14 +1,14 @@
 {
   "inbounds": [
     {
-      "port": 8080, 
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
           {
-            "id": "34035276-8726-455e-ab44-f09155dcd1dd",
+            "id": "b12f9b7c-2c3e-4c4b-a1be-123456789abc",
             "level": 0,
-            "email": "mayberidha@yahoo.com"
+            "email": "xray@railway.app"
           }
         ],
         "decryption": "none"
@@ -16,7 +16,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/exhxx"
+          "path": "/ws"
         }
       }
     }
