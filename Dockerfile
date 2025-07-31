@@ -1,5 +1,3 @@
-FROM teddysun/xray
+FROM haproxy:2.8-alpine
 
-COPY config.json /etc/xray/config.json
-
-CMD ["/usr/bin/xray", "-config", "/etc/xray/config.json"]
+COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
